@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/style.css">
+  <title>Military Target and Equipment Detection</title>
+  <link rel="shortcut icon" href="../static/logo.png" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="logo" href="../static/logo.png">
+  <link rel="preload" as="image" href="../static/hero-circle-one.png">
+  <link rel="preload" as="image" href="../static/hero-circle-two.png">
+  <script src="../static/script.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body id="top">
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="../static/logo.png" height="35px" width="35px">
+        &nbsp;&nbsp;<span class="span">MTED</span>
+      </a>
+      <nav class="navbar" data-navbar>
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
+        </button>
+        <ul class="navbar-list">
+          <li><a href="#home" class="navbar-link active" data-nav-link>Home</a></li>
+          <li> <a href="#about" class="navbar-link" data-nav-link>Object Detection</a></li>
+          <li><a href="#class" class="navbar-link" data-nav-link>Classes</a></li>
+          <li><a href="#blog" class="navbar-link" id="videos-nav-hover" data-nav-link>Input</a></li>
+        </ul>
+      </nav>
+      <a href="#blog" class="btn btn-secondary">Upload</a>
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </div>
+  </header>
+  <main>
+    <article>
+      <section class="section hero bg-dark has-after has-bg-image" id="home" aria-label="hero" data-section
+        style="background-image: url('../static/hero-bg.png')" >
+        <div class="container" id="first-container">
+          <div class="hero-content">
+            <p class="hero-subtitle"><strong class="strong">Object</strong>Detection</p>
+            <h1 class="h1 hero-title" style="font-size:40px;">Military Target and Equipment Detection</h1>
+            <p class="section-text">A Yolo-v7 trained object detection model for military targets and equipments with images and videos as input</p>
+            <a href="#" class="btn btn-primary">Get Started</a>
+          </div>
+          <div class="hero-banner">
+            <img src="../static/tank.png" width="600" height="600" alt="hero banner" class="w-100">
+            <img src="../static/hero-circle-one.png" width="666" height="666" aria-hidden="true" alt="" class="circle circle-1">
+            <img src="../static/hero-circle-two.png" width="666" height="666" aria-hidden="true" alt="" class="circle circle-2">
+          </div>
+        </div>
+      </section>
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+          <div class="about-banner has-after">
+            <img src="../static/tank.png" width="660" height="648" alt="" class="w-100">
+            <img src="../static/about-circle-one.png" width="660" height="534" loading="lazy" aria-hidden="true" alt="" class="circle circle-1">
+            <img src="../static/about-circle-two.png" width="660" height="534" loading="lazy" aria-hidden="true" alt="" class="circle circle-2">
+
+          </div>
+          <div class="about-content">
+            <p class="section-subtitle">About us</p>
+            <h2 class="h2 section-title">Object Detection</h2>
+            <p class="section-text">
+              A Simple website that uses a machine learning model that can be used for object detection of military targets and equipments using Yolo-v7 pretrained model.
+            </p>
+            <p class="section-text">
+
+            </p>
+            <div class="wrapper">
+              <div class="about-coach">
+                <figure class="coach-avatar"><img src="../static/karthik.jpg" width="65" height="65" loading="lazy" alt="Trainer"></figure>
+                <div>
+                  <h3 class="h3 coach-name">Karthik Prabhu</h3>
+                  <p class="coach-title">BMSIT student</p>
+                </div>
+                <figure class="coach-avatar"><img src="../static/rajath.jpg" width="65" height="65" loading="lazy" alt="Trainer"></figure>
+                <div>
+                  <h3 class="h3 coach-name">Rajath S</h3>
+                  <p class="coach-title">BMSIT student</p>
+                </div>
+            </div>
+          </div>
+          </div></div>
+      </section>
+      <section class="section bg-dark has-bg-image" id="class" aria-label="class"
+        style="background-image: url('../static/classes-bg.png')">
+        <div class="container" style="margin-top:-50px;">
+          <p class="section-subtitle">Our Classes</p>
+          <h2 class="h2 section-title text-center"></h2>
+          <ul class="class-list has-scrollbar">
+            <li class="scrollbar-item">
+              <div class="class-card">
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="../static/rifle.jpg" width="416" height="240" loading="lazy" alt="Weight Lifting"
+                       class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <div class="title-wrapper">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Weapons</a>
+                    </h3>
+                  </div>
+                  <p class="card-text">
+                    Dataset that was cached and annotated on roboflow.
+                  </p>
+                  <div class="card-progress">
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Best Epoch Precision</p>
+                      <span class="progress-value">100%</span>
+                    </div>
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="scrollbar-item">
+              <div class="class-card">
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="../static/jet.jpg" width="416" height="240" loading="lazy" alt="Cardio & Strenght"
+                       class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <div class="title-wrapper">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Fighter Jets</a>
+                    </h3>
+                  </div>
+                  <p class="card-text">
+Dataset that was cached and annotated on roboflow.                  </p>
+                  <div class="card-progress">
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Best Epoch Precision</p>
+                      <span class="progress-value">75%</span>
+                    </div>
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 75%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="scrollbar-item">
+              <div class="class-card">
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="../static/tribute.avif" width="416" height="240" loading="lazy" alt="Power Yoga"
+                       class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <div class="title-wrapper">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Personnel</a>
+                    </h3>
+                  </div>
+                  <p class="card-text">
+Dataset that was cached and annotated on roboflow.                  </p>
+                  <div class="card-progress">
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Best Epoch Precision</p>
+                      <span class="progress-value">80%</span>
+                    </div>
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 75%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="scrollbar-item">
+              <div class="class-card">
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="../static/tanks.jpg" width="416" height="240" loading="lazy" alt="The Fitness Pack"
+                       class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <div class="title-wrapper">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Tanks</a>
+                    </h3>
+                  </div>
+                  <p class="card-text">
+Dataset that was cached and annotated on roboflow.                  </p>
+                  <div class="card-progress">
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Best Epoch Precision</p>
+                      <span class="progress-value">70%</span>
+                    </div>
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 70%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section blog" id="blog" aria-label="blog">
+<div class="container" id="upload-grid">
+   <div class="box">
+
+    <form class="form-signin" method=post enctype=multipart/form-data name="form1">
+        <img class="mb-4" src="/static/pytorch.png" alt="" width="72">
+        <h1 class="h3 mb-3 font-weight-normal">Upload any image or video</h1>
+     <input type="file" name="file" class="form-control-file" id="inputfile" >
+
+        <br/>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Upload</button>
+  <p class="mt-5 mb-3 text-muted">Built using Pytorch & Flask</p>
+    </form>
+</div>
+    <script src="//code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<div>
+<!-- detected video display using opencv-->
+<img id="my-video-image" src="{{ url_for('video_feed') }}" style="height:640px; width:640px" />
+
+
+<!-- detected image display -->
+<img id="my-image" style="display: none;" src="{{ url_for('display', filename=file) }}" style="height:640px; width:640px"/>
+</div>
+
+
+
+
+
+
+<!-- <div class="box">-->
+<!--&lt;!&ndash; script for opening a webcam and performing detections &ndash;&gt;-->
+<!--<button id="start-webcam" onclick="startWebcam()" class="btn btn-lg btn-primary btn-block">Start Webcam</button>-->
+<!--<script>-->
+<!--function startWebcam() {-->
+<!--  window.location.href = "/webcam_feed";-->
+<!--}-->
+<!--</script>-->
+<!-- webcam ends here -->
+
+<!-- </div>-->
+<!--  <div class="box">-->
+
+<!--&lt;!&ndash; script for opening a rtsp and performing detections &ndash;&gt;-->
+<!--<button id="start-rtsp" onclick="startrtsp()" class="btn btn-lg btn-primary btn-block">Start RTSP Stream</button>-->
+<!--<script>-->
+
+<!--function startrtsp() {-->
+<!--  window.location.href = "/rtsp_feed";-->
+<!--}-->
+<!--</script>-->
+<!-- rtsp ends here -->
+ </div>
+
+
+
+
+      </section>
+    </article>
+  </main>
+  <footer class="footer">
+    <div class="section footer-top bg-dark has-bg-image" style="background-image: url('../static/footer-bg.png')">
+      <div class="container">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+             <img src="../static/logo.png" height="35px" width="35px">&nbsp;
+            <span class="span">MTED</span>
+          </a>
+          <p class="footer-brand-text">
+            A Yolo-v7 trained object detection model for military targets and equipments with images and videos as input
+          </p>
+          <div class="wrapper">
+
+          </div>
+        </div>
+        <ul class="footer-list">
+          <li><p class="footer-list-title has-before">Our Links</p></li>
+          <li><a href="#home" class="footer-link">Home</a></li>
+          <li><a href="#about" class="footer-link">Object Detection</a></li>
+          <li><a href="#class" class="footer-link">Classes</a></li>
+          <li><a href="#blog" class="footer-link">Upload</a></li>
+        </ul>
+        <ul class="footer-list">
+          <li><p class="footer-list-title has-before">Contact Us</p></li>
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="location" aria-hidden="true"></ion-icon>
+            </div>
+            <address class="address footer-link">
+              BMS INSTITUTE OF TECHNOLOGY AND MANAGEMENT
+            </address>
+          </li>
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+            </div>
+            <div>
+              <a href="tel:18001213637" class="footer-link">1234567890</a>
+              <a href="tel:+915552348765" class="footer-link">1234567890</a>
+            </div>
+          </li>
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="mail" aria-hidden="true"></ion-icon>
+            </div>
+            <div>
+              <a href="mailto:info@fitlife.com" class="footer-link">karthikprabhu2541@gmail.com</a>
+              <a href="mailto:services@fitlife.com" class="footer-link">1by20cs143@bmsit.in</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li><p class="footer-list-title has-before">Our Newsletter</p></li>
+          <li>
+            <form action="" class="footer-form">
+              <input type="email" name="email_address" aria-label="email" placeholder="Email Address" required class="input-field">
+              <button type="submit" class="btn btn-primary" aria-label="Submit">
+                <ion-icon name="chevron-forward-sharp" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+          </li>
+          <li>
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">&copy; 2023 MTED. All Rights Reserved By <a href="#" class="copyright-link">Karthik and Rajath.</a></p>
+        <ul class="footer-bottom-list">
+          <li><a href="#" class="footer-bottom-link has-before">Privacy Policy</a></li>
+          <li><a href="#" class="footer-bottom-link has-before">Terms & Condition</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up-sharp" aria-hidden="true"></ion-icon>
+  </a>
+<script>
+document.getElementById("my-image").onload = function() {
+  this.style.display = "block";
+};
+</script>
+</body>
+</html>
